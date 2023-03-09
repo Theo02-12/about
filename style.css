@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding:15px;
+    background-color: lightgrey;
+
+}
+.nav-bar ul{
+    display: flex;
+    margin-top: 10px;
+    list-style-type: none;
+}
+.nav-bar ul li{
+    padding-right: 15px;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    color: rgb(1, 88, 170);
+    font-weight: bold;
+    padding: 10px;
+}
+.nav-bar ul li a:hover{
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 30px;
+    transition: .3s;
+}
+.main-section{
+    margin-top: 100px;
+    width: 100vw;
+    height: 100%;
+}
+.titre-main{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.main-section h1{
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgb(1, 88, 170);
+    text-align: center;
+    font-size: 2em;
+}
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.container{
+    width: 100%;
+    height: 80vh;
+    margin-top: 30px;
+    background-color:aliceblue ;
+    display: flex;
+    justify-content: center;
+
+}
+.skills{
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+.content{
+    width: 80%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0px 15px 0px;
+    border-radius: 20px;
+     border: 1px solid grey;
+}
+.para1{
+    width: 350px;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.para1 em{
+    color: rgb(1, 88, 170);
+}
+.para2{
+    width: 300px;
+    text-align: start;
+}
+.portrait{
+    width: 300px;
+    margin-right: 50px;
+    border-radius: 0px 0px 30px 30px;
+    background-size: 100%;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-image: url(portrait.jpg);
+}
+.footer{
+    width: 100vw;
+    height: 100px;
+    background-color: lightgray;
+    margin-top: 100px;
+}
+.footer-element{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-element h4{
+    padding-right: 10px;
+}
+@media (max-width: 768px) {
+    .header{
+        display: block;
+    }
+    .nav-bar ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    .content{
+        display: block;
+    }
+}
