@@ -5,13 +5,15 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 .header{
     width: 100vw;
     display: flex;
     justify-content: space-between;
     padding:15px;
-    background-color: lightgrey;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(1, 88, 170);
 
 }
 .nav-bar ul{
@@ -20,7 +22,7 @@ body{
     list-style-type: none;
 }
 .nav-bar ul li{
-    padding-right: 15px;
+    gap: 10px;
 }
 .nav-bar ul li a{
     text-decoration: none;
@@ -28,7 +30,7 @@ body{
     font-weight: bold;
     padding: 10px;
 }
-.nav-bar ul li a:hover{
+.nav-bar ul li :hover{
     background-color: rgba(0, 0, 0, .3);
     border-radius: 30px;
     transition: .3s;
@@ -36,21 +38,21 @@ body{
 .main-section{
     margin-top: 100px;
     width: 100vw;
-    height: 100%;
+    height: 80vh;
 }
 .titre-main{
     display: flex;
     justify-content: center;
     width: 100%;
 }
-.main-section h1{
+.titre-main h1{
     padding-bottom: 5px;
     border-bottom: 2px solid rgb(1, 88, 170);
     text-align: center;
     font-size: 2em;
 }
 .main{
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,20 +60,76 @@ body{
 }
 .container{
     width: 100%;
-    height: 80vh;
+    height: 45%;
     margin-top: 30px;
     background-color:aliceblue ;
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
 
 }
 .skills{
-    width: 30px;
-    height: 30px;
-    background-color: black;
+    width: 20vw;
+    height: 100%;
+    border-radius: 20px;
+    margin: 10px;
+    border: 1px solid black;
+   
+}
+.skills h3{
+    padding-top: 10px; 
+    text-align: center;
+}
+.nav-skills ul{
+    margin-top: 30px;
+}
+.skills i{
+    font-size: 20px;
+    padding-left: 5px;
+}
+.skills ul li{
+    list-style-type: none;
+    text-align: start;
+    padding: 10px;
+    font-size: 1.3em;
+}
+.skill-bar{
+    height: 20px;
+    background-color: rgb(218, 218, 218);
+    margin: 20px 10px 10px 10px;
+    border-radius: 10px;
+}
+.content-bar{
+    background-color: rgb(1, 88, 170);
+    height: 100%;
+    font-size: 1em;
+    color: white;
+    padding-left: 5px;
+}
+.html{
+    width: 70%;
+}
+.css{
+    width: 50%;
+}
+.js{
+    width: 15%;
+}
+.php{
+    width: 5%;
+}
+.mysql{
+    width: 2%;
+}
+.php-objet{
+    width: 1%;
+}
+.progress{
+    text-align: start;
 }
 .content{
-    width: 80%;
+    width: 60%;
     margin-top: 50px;
     display: flex;
     justify-content: center;
@@ -101,11 +159,52 @@ body{
     background-repeat: no-repeat;
     background-image: url(portrait.jpg);
 }
+.section{
+    width: 100vw;
+    height: 100%;
+    margin-top: 100px;
+}
+.main-content{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    padding: 60px 0px;
+    margin-bottom: 30px;
+    margin: auto;
+    justify-content: space-around;
+}
+.objectif{
+    width: 25%;
+    height: 50%;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.objectif h2{
+    width: 100%;
+    font-size: 1.4em;
+    border-bottom: 1px solid rgb(1, 88, 170);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-bottom: .5rem;
+}
+.objectif li{
+    padding: 10px;
+    font-size: 1.5em;
+}
 .footer{
     width: 100vw;
-    height: 100px;
+    height: 60px;
     background-color: lightgray;
-    margin-top: 100px;
+    margin-top: 10px;
+    position: fixed;
+    bottom: 0;
 }
 .footer-element{
     height: 100%;
@@ -116,6 +215,12 @@ body{
 .footer-element h4{
     padding-right: 10px;
 }
+
+
+
+
+
+
 @media (max-width: 768px) {
     .header{
         display: block;
@@ -123,8 +228,59 @@ body{
     .nav-bar ul{
         flex-direction: column;
         text-align: center;
+        padding: 5px;
+    }
+    .nav-bar ul li{
+        padding: 5px;
     }
     .content{
         display: block;
+    }
+    .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    .skills{
+        width: 90%;
+    }
+    .progress{
+        margin-bottom: 40px;
+    }
+    .skills h3{
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+    .para1{
+        font-size: 1.2em;
+        width: 100%;
+        text-align: center;
+    }
+    .para2{
+        font-size: .8em;
+        width: 100%;
+        text-align: center;
+    }
+    .portrait{
+        margin: auto;
+        margin-bottom: 20px;
+        width: 150px;
+        height: 150px;
+    }
+    .main-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .objectif{
+        width: 90%;
+    }
+    .objectif h2{
+        font-size: 1em;
+        margin-bottom: 5px;
+    }
+    .objectif li{
+        padding: 5px;
+        font-size: .8em;
     }
 }
