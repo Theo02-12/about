@@ -186,7 +186,8 @@ body{
 .passion-text{
     padding: 8px;
 }
-.objectif h5{
+.title-mma{
+    font-size: .8em;
     text-align: center;
     font-weight: 600;
 }
@@ -415,7 +416,7 @@ label, #toggle
         align-items: center;
         margin: 0 auto;
         font-size: 40px;
-        color: rgb(5, 5, 5);
+        color: inherit
         cursor: pointer;
     }
  
