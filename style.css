@@ -416,7 +416,7 @@ label, #toggle
         align-items: center;
         margin: 0 auto;
         font-size: 40px;
-        color: inherit
+        color: inherit;
         cursor: pointer;
     }
  
