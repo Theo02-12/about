@@ -241,8 +241,8 @@ body{
     .header{
         display: flex;
     }
-    .header h2{
-        font-size: 1.2em;
+    .header h1{
+        font-size: 1.5em;
     }
     .content-header p{
         font-size: .5em;
@@ -257,6 +257,9 @@ body{
         padding: 5px;
         border-radius: 10px;
         border: 1px solid rgb(1, 88, 170);
+    }
+    .titre-main h2{
+        font-size: 1.4em;
     }
 
     .content{
@@ -316,7 +319,7 @@ body{
     .objectif{
         width: 80%;
     }
-    .footer-element h4{
+    .footer-element h3{
         font-size: .8em;
         padding-left: 5px;
     }
